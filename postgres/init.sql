@@ -3,7 +3,7 @@
 CREATE DATABASE customer_db;
 CREATE USER customer_user WITH PASSWORD 'root';
 
-\connect customer;
+\connect customer_db;
 
 CREATE TABLE customer (
    id SERIAL PRIMARY KEY,
@@ -23,7 +23,7 @@ VALUES
  CREATE DATABASE movie_db;
  CREATE USER movie_user WITH PASSWORD 'movie_password';
 
-\connect movie;
+\connect movie_db;
 
  CREATE TABLE movie (
     id SERIAL PRIMARY KEY,
